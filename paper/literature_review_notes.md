@@ -104,6 +104,8 @@ Pages read: Full paper
 - The paper includes limited compressed-video evaluation, but not a full robustness study.
 - Real videos were selected from VoxCeleb2: 500 videos, one per celebrity, with an average duration of 7.8 seconds. The authors selected clear, centred, English-speaking face videos with minimal occlusion.
 
+
+
 ### AV-Deepfake1M: A Large-Scale LLM-Driven Audio-Visual Deepfake Dataset
 
 Citation key: cai_2023_avdeepfake1m
@@ -112,7 +114,7 @@ Pages read: Full paper
 #### What I think the paper is about:
 
 - Deepfake dataset geenrated using an LLM
-- > 2k subjects and 1M deepfake videos using different manipulation methods.
+- 2k subjects and 1M deepfake videos using different manipulation methods.
 - Most datasets assume entirity of content is either real or fake, they don't consider the manipulation of small segments in the otherwise real content, making the content a deepfake in that regard. This can cause for the underlying meaning of the original content to be changed/manipulated, possibly refelcting a different message than intended originally.
 - Their contribtion is the AV dataset used for classification and temporal localisation tasks.
 - LAV-DF introduced first content-driven deepfake dataset for temporal localisation but was limited in quality and scale, issues they address.
@@ -176,47 +178,78 @@ Pages read: Full paper
 - The paper also includes a human study showing that humans find AV-Deepfake1M harder than LAV-DF.
 - The dataset generation required around 3,000 GPU hours, but that was for creating the dataset, not simply training a detector.
 
+
+
 ### AV-Deepfake1M++: A Large-Scale Audio-Visual Deepfake Benchmark with Real-World Perturbations
 
 Citation key: cai_2025_avdeepfake1m
 Pages read:
 
 #### What I think the paper is about:
+- Makes same problem statement as previous paper, mentioning how it is an extension of the original.
+- 3 Key Limitations of previous benchmarking:
+Scale and sorce diversity were limited.
+Benchmarks lacked generation diversity - less diversity encourage overfitting.
+Streaming and redistribution artefacts uch as blur, recompression, frame drops, reverberation and packet jitters are overlooked despite being ubiquitous IRL. These can cause misleading signals, making the forgeries more complicated to detect.
+- They solve this by increasing range of source datasets to VoxCeleb2, LRS3 and EngageNet. Deepfake generation pipeline includes 9 SOTA models to create unimodal & cross-modal forgeries using insert, replace and delete.
+- Multiple techniques used to simulate real-world perturbations, including Gaussian/Poisson noise, rolling shutter, colour quantisation, Doppler shift, clipping, etc..
+- FakeAVCeleb and LAV-DF are good multimodal deepfake datasets but both rely on a single visual and audio generator (Wav2Lip, SV2TTS), encouraging models to ovefit to method-specific artifacts and LAV-DF uses rule-based text manip. which limits diversity of generated deepfake content.
+- Visual side, SOTA lip-sync models such as LatentSync, Diff2Lip and TalkLip outperform well known predecessors.
+- Audio side, SOTA zero-shot TTS methods (XTTSv2, F5TTS) can clone a speaker's voice from seconds of reference audio while controllable prosody models can match emotion and style to perfect the deepfake.
+- LLMs now deliver lower cost, more efficient and better quality outputs (GPT-4o mini mentioned) and can be used to automate planning insert/replace/delete operations and semantic editing while keeping meaning (already done in previous).
+- They make a point that the community can push the performance for temporal localisation task as results from the challenge were low for this.
 
--
 
 #### Why it matters to my project:
+- AV-Deepfake1M++ is probably the strongest main dataset candidate because it directly supports audio-visual detection, temporal localisation, and robustness testing.
+- It extends AV-Deepfake1M by increasing scale, source diversity, generation diversity, and perturbation realism.
+- It is useful for my project because it tests whether models can handle partial manipulations, modality-specific manipulations, and real-world degradation.
+- The dataset includes official benchmark splits and challenge-style evaluation, which could make experiments more reproducible.
+- The 2025 challenge results suggest that video-level classification may already be strong for top teams, but temporal localisation still has a large performance gap.
+- This supports a project contribution around temporal localisation, modality-aware fusion, perturbation robustness, or failure analysis.
 
--
+#### Important facts:
+- AV-Deepfake1M++ contains 2,051,154 videos, 1,423,218 fake videos, 627,936 real videos, around 502.8 million frames, 4,655.9 hours of video, and 7,109 subjects.
+- It uses three real source datasets: VoxCeleb2, LRS3, and EngageNet.
+- It creates content-driven manipulations using insert, replace, and delete operations.
+- It uses a wider pool of audio and visual generation methods than LAV-DF and AV-Deepfake1M.
+- It includes real, fake-audio-real-visual, real-audio-fake-visual, and fake-audio-fake-visual cases.
+- It includes audio and visual perturbations to simulate real-world redistribution and streaming conditions.
+- It provides frame-level and video-level annotations for classification and temporal localisation.
+- The dataset is linked to the 2025 1M-Deepfakes Detection Challenge, with dataset and evaluation scripts available under a research-only license.
 
-#### Limitations / problems:
 
--
+
+#### Limitations / problems / Future Directions:
+- The dataset is extremely large, so full-scale training may be unrealistic for my MSc timeline without strong GPU and storage access.
+- The paper’s own future directions suggest that perturbation-robust representation learning is still unsolved.
+- Rapid adaptation to new forgery pipelines remains difficult because generators evolve quickly.
+- Fine-grained multimodal reasoning is still needed, because detecting low-level artefacts may not be enough.
+- Cross-cultural and multilingual robustness remains an open issue; MAVOS-DD may be relevant here, but it could become a separate project direction.
+- Open-world evaluation is still a challenge because detectors need to generalise to unseen generators and unseen perturbations.
+- Ethics, fairness, and privacy are major concerns because the dataset involves large-scale manipulated media.
+
 
 #### How this connects to generalisation or robustness:
+- Generalisation: the dataset splits use different identities, real sources, and generation methods across training/validation, TestA, and TestB, which helps test cross-domain generalisation.
+- Robustness: the dataset includes perturbations such as blur, recompression, frame drops, noise, reverberation, packet jitter, audio stutter, and frame-rate jitter.
+- Open-world evaluation: the paper argues that future detectors should handle unseen generation methods and unseen perturbations.
+- Shortcut learning: older datasets with limited generators may encourage models to learn generator-specific artefacts rather than general deepfake cues.
+- Modality robustness: because manipulations can affect audio, video, or both, the dataset can test whether multimodal models actually handle modality mismatch.
 
--
-
-#### What I still don't understand:
-
--
-
-#### Other notes:
-
--
 
 #### Corrections / additions after checking paper:
+- They bridge the gap from previous works by sourcing mroe real data from multiple datasets, integrating more SOTA lip-sync and TTS methods, simulating 36 audio/visual IRL pertubation, and providing frame and video level annotations for both classification and temporal localisation.
 
--
+
+
+
 
 ## Themes Emerging
-
 -
 
 ## Possible Research Gaps
-
 -
 
 ## Useful References / BibTeX
-
 -
