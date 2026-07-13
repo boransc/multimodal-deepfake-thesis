@@ -1,0 +1,15 @@
+{
+    "experiment_id": "001",
+    "experiment_name": "visual_convnext_random_balanced20k",
+    "run_name_used_in_original_notebook": "visual_convnext_tiny_16frames_balanced20k",
+    "archived_as": "001_visual_convnext_random_balanced20k",
+    "task": "visual_only_binary_classification",
+    "model": "FrameAverageConvNeXt-Tiny",
+    "split_type": "random_row_split",
+    "class_balance": "balanced_20k",
+    "dataset": "AV-Deepfake1M++ validation subset",
+    "num_frames": 16,
+    "image_size": 224,
+    "notes": "First successful visual-only baseline. Random row split may leak related clip variants across train/val/test, so this should be treated as a pipeline baseline rather than the main scientific result.",
+    "archived_at": "2026-07-13T17:01:09"
+}
