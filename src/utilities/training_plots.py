@@ -1,6 +1,20 @@
-import matplotlib.pyplot as plt
-import pandas as pd
 from pathlib import Path
+import time
+
+import matplotlib.pyplot as plt
+import psutil
+import torch
+
+try:
+    import pynvml
+
+    pynvml.nvmlInit()
+    GPU_HANDLE = pynvml.nvmlDeviceGetHandleByIndex(0)
+    NVML_AVAILABLE = True
+except Exception:
+    pynvml = None
+    GPU_HANDLE = None
+    NVML_AVAILABLE = False
 
 def plot_training_history(history_df, save_dir, run_name):
     save_dir = Path(save_dir)
