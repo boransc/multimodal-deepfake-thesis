@@ -4,3 +4,6 @@ exports/
 
 *checkpoints/
 *notebook/
+
+#ignore all .pt checkpoint files - too large
+*.pt

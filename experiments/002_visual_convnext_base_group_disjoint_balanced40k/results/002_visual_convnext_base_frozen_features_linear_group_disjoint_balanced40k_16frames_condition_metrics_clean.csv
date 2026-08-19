@@ -1,5 +1,0 @@
-condition,n,true_label,condition_success_rate,interpretation,predicted_fake_rate,mean_fake_probability
-fake_video_fake_audio,1001,1,0.7532467532467533,fake recall,0.7532467532467533,0.6121037
-fake_video_real_audio,972,1,0.7489711934156379,fake recall,0.7489711934156379,0.6111551
-real,3000,0,0.656,real recall,0.344,0.43387935
-real_video_fake_audio,1027,1,0.7409931840311588,fake recall,0.7409931840311588,0.60605145
