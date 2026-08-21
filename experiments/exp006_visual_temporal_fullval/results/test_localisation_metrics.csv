@@ -1,0 +1,2 @@
+n_positive_visual_fake_clips,mean_sampled_frame_iou_positive_clips,median_sampled_frame_iou_positive_clips,recall_iou_ge_0_1,recall_iou_ge_0_3,recall_iou_ge_0_5
+5735,0.24561598200406826,0.13636363636363635,0.5672188317349608,0.31926765475152574,0.21272885789014823

@@ -1,0 +1,76 @@
+{
+    "run_name": "exp006_visual_temporal_fullval",
+    "source_manifest_path": "/home/jovyan/MSC_PROJECT/data/avdeepfake1mpp/manifests/usable_multimodal_val_labelled_manifest.csv",
+    "metadata_path_used": null,
+    "split_type": "group_disjoint_random_fullval_no_balancing",
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "test_frac": 0.15,
+    "missing_visual_segment_policy": "drop",
+    "rows_total_after_filtering": 76928,
+    "train_rows": 53709,
+    "val_rows": 11628,
+    "test_rows": 11591,
+    "full_condition_counts": {
+        "real": 20021,
+        "fake_video_fake_audio": 19069,
+        "real_video_fake_audio": 18938,
+        "fake_video_real_audio": 18900
+    },
+    "train_condition_counts": {
+        "real": 13948,
+        "fake_video_fake_audio": 13345,
+        "real_video_fake_audio": 13261,
+        "fake_video_real_audio": 13155
+    },
+    "val_condition_counts": {
+        "real": 3086,
+        "fake_video_real_audio": 2874,
+        "fake_video_fake_audio": 2834,
+        "real_video_fake_audio": 2834
+    },
+    "test_condition_counts": {
+        "real": 2987,
+        "fake_video_fake_audio": 2890,
+        "fake_video_real_audio": 2871,
+        "real_video_fake_audio": 2843
+    },
+    "full_binary_label_counts": {
+        "1": 56907,
+        "0": 20021
+    },
+    "train_binary_label_counts": {
+        "1": 39761,
+        "0": 13948
+    },
+    "val_binary_label_counts": {
+        "1": 8542,
+        "0": 3086
+    },
+    "test_binary_label_counts": {
+        "1": 8604,
+        "0": 2987
+    },
+    "full_visual_fake_counts": {
+        "0": 38959,
+        "1": 37969
+    },
+    "train_visual_fake_counts": {
+        "0": 27209,
+        "1": 26500
+    },
+    "val_visual_fake_counts": {
+        "0": 5920,
+        "1": 5708
+    },
+    "test_visual_fake_counts": {
+        "0": 5830,
+        "1": 5761
+    },
+    "train_groups": 36361,
+    "val_groups": 7792,
+    "test_groups": 7791,
+    "train_val_group_overlap": 0,
+    "train_test_group_overlap": 0,
+    "val_test_group_overlap": 0
+}

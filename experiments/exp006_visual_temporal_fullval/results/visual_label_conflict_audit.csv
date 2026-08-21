@@ -1,0 +1,5 @@
+condition,n_rows,visual_fake,rows_with_visual_segments,visually_fake_missing_segments,visually_real_with_segments,mean_visual_segments
+fake_video_fake_audio,19069,1,19069,0,0,1.3583827154019612
+fake_video_real_audio,18900,1,18900,0,0,1.3595238095238096
+real,20021,0,0,0,0,0.0
+real_video_fake_audio,18938,0,639,0,639,0.03374168338789735
