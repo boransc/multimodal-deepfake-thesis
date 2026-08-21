@@ -1,0 +1,44 @@
+{
+    "run_name": "exp007_late_fusion_bal40k",
+    "visual_source": "exp004_visual_temporal_bal40k",
+    "audio_source": "exp005_audio_temporal_bal40k",
+    "visual_run_dir": "/home/jovyan/MSC_PROJECT/experiments/exp004_visual_temporal_bal40k",
+    "audio_run_dir": "/home/jovyan/MSC_PROJECT/experiments/exp005_audio_temporal_bal40k",
+    "visual_feature_dir": "/home/jovyan/MSC_PROJECT/experiments/exp004_visual_temporal_bal40k/features/visual_temporal_convnext_base_64f",
+    "audio_feature_dir": "/home/jovyan/MSC_PROJECT/experiments/exp005_audio_temporal_bal40k/features/audio_logstft_s16_64w",
+    "visual_checkpoint": "/home/jovyan/MSC_PROJECT/experiments/exp004_visual_temporal_bal40k/checkpoints/best_temporal_head.pt",
+    "audio_checkpoint": "/home/jovyan/MSC_PROJECT/experiments/exp005_audio_temporal_bal40k/checkpoints/best_audio_temporal_head.pt",
+    "train_rows": 28000,
+    "train_condition_counts": {
+        "real": 14000,
+        "real_video_fake_audio": 4721,
+        "fake_video_real_audio": 4701,
+        "fake_video_fake_audio": 4578
+    },
+    "train_binary_label_counts": {
+        "1": 14000,
+        "0": 14000
+    },
+    "val_rows": 6000,
+    "val_condition_counts": {
+        "real": 3000,
+        "fake_video_fake_audio": 1048,
+        "fake_video_real_audio": 979,
+        "real_video_fake_audio": 973
+    },
+    "val_binary_label_counts": {
+        "0": 3000,
+        "1": 3000
+    },
+    "test_rows": 6000,
+    "test_condition_counts": {
+        "real": 3000,
+        "real_video_fake_audio": 1027,
+        "fake_video_fake_audio": 1001,
+        "fake_video_real_audio": 972
+    },
+    "test_binary_label_counts": {
+        "0": 3000,
+        "1": 3000
+    }
+}
