@@ -1,0 +1,11 @@
+{
+  "visual_max": 0.395,
+  "visual_top10_mean": 0.3,
+  "audio_max": 0.385,
+  "audio_top10_mean": 0.34500000000000003,
+  "or_max": 0.655,
+  "or_top10": 0.545,
+  "visual_specific": 0.375,
+  "audio_specific": 0.42500000000000004,
+  "lr_fusion": 0.495
+}

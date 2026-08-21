@@ -1,0 +1,13 @@
+view,condition,rows,unique_sources
+full_natural,fake_video_fake_audio,10835,499
+full_natural,fake_video_real_audio,9709,500
+full_natural,real,500,500
+full_natural,real_video_fake_audio,500,500
+source_matched4,fake_video_fake_audio,499,499
+source_matched4,fake_video_real_audio,499,499
+source_matched4,real,499,499
+source_matched4,real_video_fake_audio,499,499
+source_matched_binary,fake_video_fake_audio,145,145
+source_matched_binary,fake_video_real_audio,202,202
+source_matched_binary,real,499,499
+source_matched_binary,real_video_fake_audio,152,152

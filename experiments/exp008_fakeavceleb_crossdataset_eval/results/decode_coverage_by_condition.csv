@@ -1,0 +1,5 @@
+condition,rows,visual_decode_rate,audio_decode_rate,both_decode_rate
+fake_video_fake_audio,10835,1.0,1.0,1.0
+fake_video_real_audio,9709,1.0,1.0,1.0
+real,500,1.0,1.0,1.0
+real_video_fake_audio,500,1.0,1.0,1.0

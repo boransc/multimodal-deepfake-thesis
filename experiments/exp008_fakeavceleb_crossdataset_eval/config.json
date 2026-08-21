@@ -1,0 +1,12 @@
+{
+  "run_name": "exp008_fakeavceleb_crossdataset",
+  "pipeline_version": "metadata_audited_v2",
+  "external_dataset": "FakeAVCeleb_v1.2",
+  "evaluation": "zero-shot cross-dataset; no external retraining or threshold tuning",
+  "audited_manifest": "/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/metadata_audit/fakeavceleb_manifest_unique.csv",
+  "num_visual_frames": 64,
+  "num_audio_windows": 64,
+  "max_sources": null,
+  "bootstrap_reps": 1000,
+  "seed": 42
+}

@@ -1,0 +1,13 @@
+path,condition,source,decode_ok,codec_name,samples,duration_sec,abs_mean,error
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/FakeVideo-FakeAudio/Caucasian (American)/men/id00018/00181_id01201_Q8XWfmNiWYA_faceswap_id03678_wavtolip.mp4,fake_video_fake_audio,id00018,1,aac,65536,4.096,0.03434057533740997,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/FakeVideo-FakeAudio/Caucasian (American)/men/id00020/00206_id00060_wavtolip.mp4,fake_video_fake_audio,id00020,1,aac,64645,4.0403125,0.01439717784523964,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/FakeVideo-FakeAudio/Caucasian (American)/men/id00021/00010_id00088_6WIDWxr8vuU_faceswap_id00088_wavtolip.mp4,fake_video_fake_audio,id00021,1,aac,64512,4.032,0.016886593773961067,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/FakeVideo-RealAudio/Caucasian (American)/men/id00018/00181_id01192_wavtolip.mp4,fake_video_real_audio,id00018,1,aac,78848,4.928,0.024972356855869293,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/FakeVideo-RealAudio/Caucasian (American)/men/id00020/00206_id01211_wavtolip.mp4,fake_video_real_audio,id00020,1,aac,90279,5.6424375,0.013900095596909523,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/FakeVideo-RealAudio/Caucasian (American)/men/id00021/00010_id00943_wavtolip.mp4,fake_video_real_audio,id00021,1,aac,76800,4.8,0.052464764565229416,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/RealVideo-RealAudio/Caucasian (American)/men/id00018/00181.mp4,real,id00018,1,aac,77824,4.864,0.036614738404750824,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/RealVideo-RealAudio/Caucasian (American)/men/id00020/00206.mp4,real,id00020,1,aac,176128,11.008,0.013878165744245052,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/RealVideo-RealAudio/Caucasian (American)/men/id00021/00010.mp4,real,id00021,1,aac,75776,4.736,0.08359255641698837,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/RealVideo-FakeAudio/Caucasian (American)/men/id00018/00181_fake.mp4,real_video_fake_audio,id00018,1,mp3,78176,4.886,0.01005800161510706,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/RealVideo-FakeAudio/Caucasian (American)/men/id00020/00206_fake.mp4,real_video_fake_audio,id00020,1,mp3,176396,11.02475,0.020383432507514954,
+/home/jovyan/MSC_PROJECT/data/FakeAVCeleb_v1.2/RealVideo-FakeAudio/Caucasian (American)/men/id00021/00010_fake.mp4,real_video_fake_audio,id00021,1,mp3,76086,4.755375,0.01767793856561184,
