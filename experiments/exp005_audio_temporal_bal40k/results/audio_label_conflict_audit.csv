@@ -1,0 +1,13 @@
+split,condition,n_rows,audio_fake,rows_with_audio_segments,audio_fake_missing_segments,audio_real_with_segments,mean_audio_segments
+train,fake_video_fake_audio,4578,1,4578,0,0,1.3586719091306247
+train,fake_video_real_audio,4701,0,159,0,159,0.03382259093809828
+train,real,14000,0,0,0,0,0.0
+train,real_video_fake_audio,4721,1,4721,0,0,1.350984960813387
+val,fake_video_fake_audio,1048,1,1048,0,0,1.3673664122137406
+val,fake_video_real_audio,979,0,29,0,29,0.0296220633299285
+val,real,3000,0,0,0,0,0.0
+val,real_video_fake_audio,973,1,973,0,0,1.3669064748201438
+test,fake_video_fake_audio,1001,1,1001,0,0,1.3576423576423577
+test,fake_video_real_audio,972,0,28,0,28,0.02880658436213992
+test,real,3000,0,0,0,0,0.0
+test,real_video_fake_audio,1027,1,1027,0,0,1.3758519961051607

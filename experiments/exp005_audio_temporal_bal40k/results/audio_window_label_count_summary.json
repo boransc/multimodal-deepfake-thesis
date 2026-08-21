@@ -1,0 +1,15 @@
+{
+    "positive_windows": 28852.0,
+    "negative_windows": 1763148.0,
+    "total_windows": 1792000.0,
+    "positive_rate": 0.01610044642857143,
+    "negative_rate": 0.9838995535714286,
+    "decode_ok_videos": 28000,
+    "total_videos": 28000,
+    "decode_ok_rate": 1.0,
+    "audio_fake_videos": 9299,
+    "audio_fake_with_positive_sampled_windows": 9200,
+    "audio_fake_window_coverage_rate": 0.9893536939455856,
+    "raw_pos_weight": 61.110079023984476,
+    "used_pos_weight": 20.0
+}

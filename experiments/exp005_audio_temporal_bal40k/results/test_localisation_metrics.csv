@@ -1,0 +1,2 @@
+n_positive_audio_fake_clips,mean_sampled_window_iou_positive_clips,median_sampled_window_iou_positive_clips,recall_iou_ge_0_1,recall_iou_ge_0_3,recall_iou_ge_0_5
+2003,0.03322518460055122,0.0,0.09535696455317025,0.052421367948077884,0.023964053919121316
