@@ -1,0 +1,13 @@
+split,condition,n_rows,visual_fake,rows_with_segments,rows_without_segments,mean_segments_per_row
+train,fake_video_fake_audio,4578,1,4578,0,1.3586719091306247
+train,fake_video_real_audio,4701,1,4701,0,1.3554562858966177
+train,real,14000,0,0,14000,0.0
+train,real_video_fake_audio,4721,0,167,4554,0.03537386147002754
+val,fake_video_fake_audio,1048,1,1048,0,1.3673664122137406
+val,fake_video_real_audio,979,1,979,0,1.3411644535240042
+val,real,3000,0,0,3000,0.0
+val,real_video_fake_audio,973,0,35,938,0.03597122302158273
+test,fake_video_fake_audio,1001,1,1001,0,1.3576423576423577
+test,fake_video_real_audio,972,1,972,0,1.3868312757201646
+test,real,3000,0,0,3000,0.0
+test,real_video_fake_audio,1027,0,45,982,0.043816942551119765

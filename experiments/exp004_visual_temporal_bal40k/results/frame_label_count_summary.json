@@ -1,0 +1,9 @@
+{
+    "positive_frames": 30842.0,
+    "negative_frames": 1761158.0,
+    "total_frames": 1792000.0,
+    "positive_rate": 0.0172109375,
+    "negative_rate": 0.9827890625,
+    "raw_pos_weight": 57.102587380844305,
+    "used_pos_weight": 20.0
+}

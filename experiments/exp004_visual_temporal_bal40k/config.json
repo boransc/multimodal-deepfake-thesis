@@ -1,0 +1,30 @@
+{
+    "run_name": "exp004_visual_temporal_bal40k",
+    "task": "visual_temporal_localisation",
+    "short_name": "exp004_visual_temporal_bal40k",
+    "model": "Frozen ConvNeXt-Base frame encoder + per-frame linear head",
+    "dataset": "AV-Deepfake1M++ validation subset",
+    "split_source_candidates": [
+        "exp002_visual_clip_bal40k",
+        "002_visual_convnext_base_frozen_features_linear_group_disjoint_balanced40k_16frames",
+        "002_visual_convnext_base_frozen_features_linear_group_disjoint_balanced40k"
+    ],
+    "target": "frame-level visual_fake labels from visual_fake_segments",
+    "segment_col": "visual_fake_segments",
+    "use_fallback_fake_segments": false,
+    "num_frames": 64,
+    "image_size": 224,
+    "feature_batch_size": 32,
+    "num_workers": 2,
+    "prefetch_factor": 1,
+    "pin_memory": false,
+    "temporal_batch_size": 32,
+    "temporal_epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "default_threshold": 0.5,
+    "missing_visual_segment_policy": "drop",
+    "pos_weight_cap": 20.0,
+    "seed": 42,
+    "created_at": "2026-07-16T02:06:26"
+}
