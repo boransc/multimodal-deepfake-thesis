@@ -1,0 +1,24 @@
+# Core numerical/data libraries
+numpy
+pandas
+
+# Machine learning and evaluation
+torch
+torchvision
+scikit-learn
+
+# Video/image processing
+opencv-python-headless
+
+# Plotting and progress reporting
+matplotlib
+tqdm
+
+# Notebook/runtime support
+ipython
+ipykernel
+jupyterlab
+
+# Hardware/resource monitoring used in Exp001
+psutil
+nvidia-ml-py
