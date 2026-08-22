@@ -2,6 +2,6 @@
 
 *checkpoints/
 *notebook/
-
+*paper/
 #ignore all .pt checkpoint files - too large
 *.pt
